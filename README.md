@@ -7,6 +7,7 @@ https://pub.dev/packages/ext_storage
 ## Features
 
 > **NOTE** This plugin is only supported Android.
+> **NOTE** Now supports null safety
 
 ExtStorage package calls Android native code, `Environment.getExternalStorageDirectory()` and `Environment.getExternalStoragePublicDirectory()`.
 
@@ -19,18 +20,18 @@ ExtStorage package calls Android native code, `Environment.getExternalStorageDir
 
 | ExtStorage                         | Android Native                      |
 |------------------------------------|-------------------------------------|
-| ExtStorage.DIRECTORY_MUSIC         | Environment.DIRECTORY_MUSIC         |
-| ExtStorage.DIRECTORY_PODCASTS      | Environment.DIRECTORY_PODCASTS      |
-| ExtStorage.DIRECTORY_RINGTONES     | Environment.DIRECTORY_RINGTONES     |
-| ExtStorage.DIRECTORY_ALARMS        | Environment.DIRECTORY_ALARMS        |
-| ExtStorage.DIRECTORY_NOTIFICATIONS | Environment.DIRECTORY_NOTIFICATIONS |
-| ExtStorage.DIRECTORY_PICTURES      | Environment.DIRECTORY_PICTURES      |
-| ExtStorage.DIRECTORY_MOVIES        | Environment.DIRECTORY_MOVIES        |
-| ExtStorage.DIRECTORY_DOWNLOADS     | Environment.DIRECTORY_DOWNLOADS     |
-| ExtStorage.DIRECTORY_DCIM          | Environment.DIRECTORY_DCIM          |
-| ExtStorage.DIRECTORY_DOCUMENTS     | Environment.DIRECTORY_DOCUMENTS     |
-| ExtStorage.DIRECTORY_SCREENSHOTS   | Environment.DIRECTORY_SCREENSHOTS   |
-| ExtStorage.DIRECTORY_AUDIOBOOKS    | Environment.DIRECTORY_AUDIOBOOKS    |
+| ExtStorage.directoryMusic          | Environment.DIRECTORY_MUSIC         |
+| ExtStorage.directoryPodcasts       | Environment.DIRECTORY_PODCASTS      |
+| ExtStorage.directoryRingtones      | Environment.DIRECTORY_RINGTONES     |
+| ExtStorage.directoryAlarms         | Environment.DIRECTORY_ALARMS        |
+| ExtStorage.directoryNotifications  | Environment.DIRECTORY_NOTIFICATIONS |
+| ExtStorage.directoryPictures       | Environment.DIRECTORY_PICTURES      |
+| ExtStorage.directoryMovies         | Environment.DIRECTORY_MOVIES        |
+| ExtStorage.directoryDownloads      | Environment.DIRECTORY_DOWNLOADS     |
+| ExtStorage.directoryDCIM           | Environment.DIRECTORY_DCIM          |
+| ExtStorage.directoryDocuments      | Environment.DIRECTORY_DOCUMENTS     |
+| ExtStorage.directoryScreenshots    | Environment.DIRECTORY_SCREENSHOTS   |
+| ExtStorage.directoryAudiobooks     | Environment.DIRECTORY_AUDIOBOOKS    |
 
 ## Installation
 
