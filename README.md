@@ -67,7 +67,8 @@ void _example2() async {
 
 ## Author
 
-yasukotelin
+- yasukotelin
+- Aduyrat
 
 ## LICENCE
 
