@@ -7,7 +7,8 @@ https://pub.dev/packages/ext_storage
 ## Features
 
 > **NOTE** This plugin is only supported Android.
-> **NOTE** Now supports null safety
+-
+> **NOTE** Now supports null safety.
 
 ExtStorage package calls Android native code, `Environment.getExternalStorageDirectory()` and `Environment.getExternalStoragePublicDirectory()`.
 
