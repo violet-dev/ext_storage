@@ -6,29 +6,29 @@ import 'package:flutter/services.dart';
 class ExtStorage {
   static const MethodChannel _channel = const MethodChannel('ext_storage');
 
-  static final String DIRECTORY_MUSIC = "Music";
+  static final String directoryMusic = "Music";
 
-  static final String DIRECTORY_PODCASTS = "Podcasts";
+  static final String directoryPodcasts = "Podcasts";
 
-  static final String DIRECTORY_RINGTONES = "Ringtones";
+  static final String direcoryRingtones = "Ringtones";
 
-  static final String DIRECTORY_ALARMS = "Alarms";
+  static final String directoryAlarms = "Alarms";
 
-  static final String DIRECTORY_NOTIFICATIONS = "Notifications";
+  static final String directoryNotifications = "Notifications";
 
-  static final String DIRECTORY_PICTURES = "Pictures";
+  static final String directoryPictures = "Pictures";
 
-  static final String DIRECTORY_MOVIES = "Movies";
+  static final String directoryMovies = "Movies";
 
-  static final String DIRECTORY_DOWNLOADS = "Download";
+  static final String directoryDownload = "Download";
 
-  static final String DIRECTORY_DCIM = "DCIM";
+  static final String directoryDCIM = "DCIM";
 
-  static final String DIRECTORY_DOCUMENTS = "Documents";
+  static final String directoryDocuments = "Documents";
 
-  static final String DIRECTORY_SCREENSHOTS = "Screenshots";
+  static final String directoryScreenshots = "Screenshots";
 
-  static final String DIRECTORY_AUDIOBOOKS = "Audiobooks";
+  static final String directoryAudiobooks = "Audiobooks";
 
   static Future<String> getExternalStorageDirectory() async {
     if (!Platform.isAndroid) {
