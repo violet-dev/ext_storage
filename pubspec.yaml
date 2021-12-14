@@ -29,6 +29,7 @@ flutter:
   plugin:
     androidPackage: com.github.gugadev.ext_storage
     pluginClass: ExtStoragePlugin
+    mainClass: ExtStoragePlugin
     platforms:
       android:
         package: com.github.gugadev.ext_storage
