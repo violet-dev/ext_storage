@@ -32,14 +32,16 @@ class ExtStorage {
 
   static Future<String> getExternalStorageDirectory() async {
     if (!Platform.isAndroid) {
-      throw UnsupportedError("Only android supported");
+      throw PlatformException(
+          code: "isNotAndroid", message: "This plugin only works on Android.");
     }
     return await _channel.invokeMethod('getExternalStorageDirectory');
   }
 
   static Future<String> getExternalStoragePublicDirectory(String type) async {
     if (!Platform.isAndroid) {
-      throw UnsupportedError("Only android supported");
+      throw PlatformException(
+          code: "isNotAndroid", message: "This plugin only works on Android.");
     }
     return await _channel
         .invokeMethod('getExternalStoragePublicDirectory', {"type": type});

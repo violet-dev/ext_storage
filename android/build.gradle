@@ -1,4 +1,4 @@
-group 'com.github.yasukotelin.ext_storage'
+group 'com.github.gugadev.ext_storage'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -27,9 +27,19 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 28
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
+
     defaultConfig {
         minSdkVersion 16
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
