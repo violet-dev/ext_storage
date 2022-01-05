@@ -46,4 +46,13 @@ class ExtStorage {
     return await _channel
         .invokeMethod('getExternalStoragePublicDirectory', {"type": type});
   }
+  
+    static Future<String> getExternalFilesDir(String type) async {
+    if (!Platform.isAndroid) {
+      throw PlatformException(
+          code: "isNotAndroid", message: "This plugin only works on Android.");
+    }
+    return await _channel
+        .invokeMethod('getExternalFilesDir', {"type": type});
+  }
 }
